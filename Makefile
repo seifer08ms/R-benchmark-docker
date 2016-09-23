@@ -1,5 +1,7 @@
 NAME = seifer08ms/r-benchmark-docker
 
+all:     build run
+
 default: build
 
 build:
