@@ -2,7 +2,7 @@ NAME = seifer08ms/r-benchmark-docker
 
 all:     build run
 
-default: build
+default: all
 
 build:
 	    docker build -t $(NAME) .
