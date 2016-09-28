@@ -4,13 +4,15 @@ all:     build run
 
 default: all
 
+debug : build run-debug
+
 build:
 	    docker build -t $(NAME) .
 
 push:
 	    docker push $(NAME)
 
-debug:
+run-debug:
 	    docker run --rm -it $(NAME) /bin/bash
 
 run:
